@@ -142,7 +142,7 @@ body {
 .acceptance-tag {
     font-family: "Linux Biolinum", "Noto Sans", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif !important;
     font-weight: 600;
-    color: #ffffff;
+    color: #ffffff !important;
     background: linear-gradient(90deg, var(--dartmouth-green), var(--columbia-blue));
     padding: 0.35rem 0.85rem;
     border-radius: 8px;
@@ -154,48 +154,9 @@ body {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
-
-/* =========================================
-   Carousel image sizing and layout
-========================================= */
-
-.results-carousel .item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: auto;
-    padding: 1.5rem 0;
+/* Force all nested text (like <strong>) to follow the same color */
+.acceptance-tag strong {
+    color: inherit !important;
 }
 
-.results-carousel .item img {
-    max-width: 60%;
-    height: auto;
-    border-radius: 12px;
-    margin-bottom: 1rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    transition: transform 0.25s ease;
-}
 
-.results-carousel .item img:hover {
-    transform: scale(1.02);
-}
-
-.results-carousel .item h2.subtitle {
-    font-size: 1rem;
-    max-width: 900px;
-    line-height: 1.5;
-    text-align: justify;
-}
-
-/* Optional: make it responsive on smaller screens */
-@media (max-width: 768px) {
-    .results-carousel .item img {
-        max-width: 95%;
-    }
-
-    .results-carousel .item h2.subtitle {
-        font-size: 0.9rem;
-    }
-}
