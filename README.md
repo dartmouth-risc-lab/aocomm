@@ -1,3 +1,3 @@
-# Webpage for AOSL(Acousto-Optic Structured Light).
+# Webpage for AO-COMM(Acousto-Optic Beam Steering for Optical Backscatter Communication).
 
-Structured Light with a million light planes a second
+Acousto-Optic Beam Steering for Optical Backscatter Communication
