@@ -1,12 +1,10 @@
 /* =========================================
-   Linux Biolinum: regular + bold faces
+   Linux Biolinum: regular + bold + italic faces
 ========================================= */
 @font-face {
     font-family: "Linux Biolinum";
     src:
-        url("/static/fonts/LinBiolinum_regular.woff2") format("woff2"),
-        url("/static/fonts/LinBiolinum_regular.woff") format("woff"),
-        url("/static/fonts/LinBiolinum_regular.ttf") format("truetype");
+        url("static/fonts/linbiolinum_r-webfont.woff") format("woff");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -15,9 +13,16 @@
 @font-face {
     font-family: "Linux Biolinum";
     src:
-        url("/static/fonts/LinBiolinum_regular_bold.woff2") format("woff2"),
-        url("/static/fonts/LinBiolinum_regular_bold.woff") format("woff"),
-        url("/static/fonts/LinBiolinum_regular_bold.ttf") format("truetype");
+        url("static/fonts/linbiolinum_rb-webfont.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Linux Biolinum";
+    src:
+        url("static/fonts/linbiolinum_ri-webfont.woff") format("woff");
     font-weight: 700;
     font-style: normal;
     font-display: swap;
