@@ -4,7 +4,7 @@
 @font-face {
     font-family: "Linux Biolinum";
     src:
-        url("/static/fonts/linbiolinum_r-webfont.woff") format("woff");
+        url("https://dartmouth-risc-lab.github.io/conf-fonts/siggraph/webfonts/linbiolinum_r-webfont.woff") format("woff");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -13,7 +13,7 @@
 @font-face {
     font-family: "Linux Biolinum";
     src:
-        url("/static/fonts/linbiolinum_rb-webfont.woff") format("woff");
+        url("https://dartmouth-risc-lab.github.io/conf-fonts/siggraph/webfonts/linbiolinum_rb-webfont.woff") format("woff");
     font-weight: 700;
     font-style: bold;
     font-display: swap;
@@ -22,7 +22,7 @@
 @font-face {
     font-family: "Linux Biolinum";
     src:
-        url("/static/fonts/linbiolinum_ri-webfont.woff") format("woff");
+        url("https://dartmouth-risc-lab.github.io/conf-fonts/siggraph/webfonts/linbiolinum_ri-webfont.woff") format("woff");
     font-weight: 700;
     font-style: italic;
     font-display: swap;
