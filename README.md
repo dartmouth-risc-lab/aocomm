@@ -1,3 +1,3 @@
-# Webpage for AO-COMM(Acousto-Optic Beam Steering for Optical Backscatter Communication).
+# Underwater Optical Backscatter Communication using Acousto-Optic Beam Steering
 
-Acousto-Optic Beam Steering for Optical Backscatter Communication
+Venue: SIGGRAPH Asia 2025 (ACM ToG)

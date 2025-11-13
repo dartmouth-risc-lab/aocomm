@@ -1,0 +1,61 @@
+{
+  "venue": "siggraph-asia",
+  "title": "Underwater Optical Backscatter Communication using Acousto-Optic Beam Steering",
+  "site_url": "",
+  "social_desc": "AO-Optical Backscatter Communication: Playing sound on light to enable high-speed underwater wireless communication.",
+  "keywords": "Acousto-optics, underwater communication, backscatter communication, beam steering",
+
+  "institutions": [
+    { "name": "Dartmouth College", "color": "#1F673C" },
+    { "name": "Columbia University", "color": "#1860AB" }
+  ],
+
+  "authors": [
+    { "name": "Atul Rohit Agarwal",  "url": "https://www.linkedin.com/in/atulragarwal", "institute_idx": 1 },
+    { "name": "Dhawal Sirikonda", "url": "https://dhawal.xyz", "institute_idx": 1},
+    { "name": "Atharv Agashe",      "url": "https://atharvagashe.com/",                 "institute_idx": 1 },
+    { "name": "Ziang Ren",          "url": "https://scholar.google.com/citations?user=av-p-WgAAAAJ&hl=en", "institute_idx": 2 },
+    { "name": "Dinithi S. Silva",   "url": "#",                                          "institute_idx": 1 },
+    { "name": "Charles J. Carver",  "url": "https://scholar.google.com/citations?user=yC9AIHsAAAAJ&hl=en", "institute_idx": 2 },
+    { "name": "Alberto Quattrini Li","url": "https://rlab.cs.dartmouth.edu/albertoq/",  "institute_idx": 1 },
+    { "name": "Xia Zhou",           "url": "https://www.cs.columbia.edu/~xia/",         "institute_idx": 2 },
+    { "name": "Adithya Pediredla",  "url": "https://sites.google.com/view/adithyapediredla/", "institute_idx": 1 }
+  ],
+
+  "footnotes": {
+    "equal_contribution": { "first_n": 2 },
+    "equal_guidance":     { "last_n": 1 }
+  },
+
+  "acceptance_text": "SIGGRAPH Asia 2025 (ACM ToG)",
+
+  "abstract_html": "",
+  "abstract_text": "We present a high-speed underwater optical backscatter communication technique based on acousto-optic light steering. Our approach enables underwater assets to transmit data at rates potentially reaching hundreds of megabits per second, vastly outperforming current state-of-the-art optical and underwater backscatter systems, which typically operate at only a few kilobits per second. In our system, a base station illuminates the backscatter device with a pulsed laser and captures the retroreflected signal using an ultrafast photodetector. The backscatter device comprises a retroreflector and a 2 megahertz ultrasound transducer. The transducer generates pressure waves that dynamically modulate the refractive index of the surrounding medium, steering the light either toward the photodetector (encoding bit 1) or away from it (encoding bit 0). Using a 3-bit redundancy scheme, our prototype achieves a communication rate of approximately 0.66 megabits per second with an energy consumption of less than or equal to 1 microjoule per bit, representing a 60× improvement over prior techniques. We validate its performance through extensive laboratory experiments in which remote underwater assets wirelessly transmit multimedia data to the base station under various environmental conditions.",
+  "abstract_file": "",
+
+  "teaser_image": "C:\\Users\\dhawal1939\\Dartmouth College Dropbox\\Dhawal Sirikonda\\project-pages\\ao_comm_src\\static\\images\\teaser.png",
+  "teaser_caption":" (a) We introduce an underwater optical backscatter communication method using acousto-optic light steering, enabling data transfer from underwater remote assets to a base station at 0.66 Mbps ---orders of magnitude faster than prior underwater or optical backscatter systems. (b) Backscatter systems minimize power use by modulating and reflecting light from an external source (here, the base station) to encode data. Our device uses a retroreflector and ultrasound transducer to steer light: sound waves modulate water’s refractive index to direct the beam toward the base station (bit 1) or away (bit 0). (c) Our prototype transmits various signals reliably at 0.66 Mbps, consuming less than or equal to 1 microjoule per bit, and achieves a bit error rate below 1e-4---without using error correction.",
+
+  "gallery": [
+    { "path": "C:\\Users\\dhawal1939\\Dartmouth College Dropbox\\Dhawal Sirikonda\\project-pages\\ao_comm_src\\static\\images\\hardware_prototype_v2.png", "caption": "We construct a base station by colocating a pulsed laser and a photodetector using a beamsplitter. The remote asset, submerged in a water tank without any optical enclosures, consists of a total internal reflection (TIR)-based retroreflector and an ultrasonic transducer. The only waterproofing requirement is for the back surface of the retroreflector, which must remain sealed to maintain total internal reflection. The laser beam emitted from the base station is retroreflected by the remote asset. The ultrasonic transducer modulates this reflected light using the acousto-optic effect to encode a binary bitstream. The base station’s high-speed photodetector captures the modulated retroreflected light, which is then amplified via a transimpedance amplifier (TIA) and subsequently decoded to recover the transmitted binary information." },
+    { "path": "C:\\Users\\dhawal1939\\Dartmouth College Dropbox\\Dhawal Sirikonda\\project-pages\\ao_comm_src\\static\\images\\power_consumption.png", "caption": "The BER remains below 1e-4 for a wide operational voltage range of 8 to 20 volts, ensuring reliable communication. The BER values are plotted on the left y-axis in a logarithmic scale, while the corresponding energy per bit is shown on the right y-axis." },
+    { "path": "C:\\Users\\dhawal1939\\Dartmouth College Dropbox\\Dhawal Sirikonda\\project-pages\\ao_comm_src\\static\\images\\aom_setup.png", "caption": "AOM Experimental Setup: (a) Figure shows the experimental configuration for Raman–Nath diffraction using an Acousto-Optic Modulator (AOM). The retroreflected laser beam is focused onto a localized region of the AOM crystal, which performs phase modulation necessary for communication. The modulated beam is then detected by a photodetector at the base station. The blue arrows show the light path and the components like retroreflector (RR), lens, AOM, laser, photodetector (PD) are marked accordingly. (b) We visualize the photodetector outputs for the AOM operating at 39 MHz, with communication occurring at 13 Mbps. Each signal contains 1000 bits, and the bits (0 and 1) are separated by a threshold line at 150 mV. We show three representative output traces demonstrating consistent signal clarity." },
+    { "path": "C:\\Users\\dhawal1939\\Dartmouth College Dropbox\\Dhawal Sirikonda\\project-pages\\ao_comm_src\\static\\images\\turbulence.png", "caption": "(a) The figure illustrates water currents introduced into the communication system using a voltage-controlled wheel with a diameter of 6.2 cm. The oscilloscope displays the received signal [1 0 1 1 0], where each peak corresponds to transmitted data with its 3-bit redundancy, despite the presence of water currents. (b) The image captures bubbles generated by these currents as they interfere with the backscattered beam transmitting the data. (c) The BER, plotted against linear currents, demonstrates the system's performance. Even at higher currents of 2 m/s, the BER remains within an acceptable range, indicating the system's resilience to flow-induced disturbances despite the presence of bubbles in the communication beam’s path." }
+  ],
+
+    "method_html": "",
+  "method_text": "",
+  "method_video": "C:\\Users\\dhawal1939\\Dartmouth College Dropbox\\Dhawal Sirikonda\\project-pages\\ao_comm_src\\static\\videos\\method.mp4",
+
+  "links": {
+    "paper": "C:\\Users\\dhawal1939\\Dartmouth College Dropbox\\Dhawal Sirikonda\\project-pages\\aocomm\\static\\aocomm_sigasia25_camera_ready.pdf",
+    "material": "https://github.com/dartmouth-risc-lab/ao_communications",
+    "video": "",
+    "presentation": "",
+    "poster": ""
+  },
+
+  "bibtex": "@article{agarwal2025underwater,\ntitle = {Underwater Optical Backscatter Communication using Acousto-Optic Beam Steering},\n author = {Agarwal, Atul Rohit and Sirikonda, Dhawal and Agashe, Atharv and Ren, Ziang and Silva, Dinithi S. and Carver,\n Charles J. and Quattrini Li, Alberto and Zhou, Xia and Pediredla, Adithya},\n journal={ACM Transactions on Graphics (TOG)},\n          year = {2025},\n          doi = {10.1145/3763289},\n          note = {† Both authors contributed equally},\n          }",
+
+  "acknowledgments_text": "We are grateful to Ioannis Gkioulekas (Carnegie Mellon University) and Devin J. Balkcom (Dartmouth College) for lending resources for experiments. This work was supported in part by the NSF under Grants No. 2326904, 2144624 and 1552924. ChatGPT is used for manuscript refinement and Meta's Llama for generating images."
+}
